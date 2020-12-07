@@ -1,16 +1,16 @@
 <template>
   <div class="p-8 flex flex-grow">
-    <MarketListings/>
+    <MarketListings />
   </div>
 </template>
 
-<script>
-import MarketListings from "@/components/organisms/MarketListings";
+<script lang="ts">
+import MarketListings from '@/components/organisms/MarketListings.vue'
 
 export default {
   name: 'Home',
   components: {
-    MarketListings,
-  }
+    MarketListings
+  },
 }
 </script>

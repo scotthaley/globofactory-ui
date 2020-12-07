@@ -1,12 +1,12 @@
 import { createApp } from 'vue';
 import App from './App.vue';
 import './assets/tailwind.css';
-import { auth } from './firebase.ts';
-import router from './router/index.ts'
+import { auth } from './firebase';
+import router from './router'
 
-let app;
+let app: any;
 auth.onAuthStateChanged(() => {
     if (!app) {
-        app = createApp(App).use(router).mount('#app')
+        const test = createApp(App).use(router).mount('#app')
     }
 })
