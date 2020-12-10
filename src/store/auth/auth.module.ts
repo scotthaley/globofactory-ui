@@ -6,6 +6,7 @@ export default {
     state: (): IAuthState => ({
         ...state
     }),
+    namespaced: true,
     mutations,
     actions
 }
